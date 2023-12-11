@@ -1,1 +1,1 @@
-web: gunicorn reportersprj.wsgi --log-file -
+web: gunicorn LoremIpsumStore.wsgi --log-file -
