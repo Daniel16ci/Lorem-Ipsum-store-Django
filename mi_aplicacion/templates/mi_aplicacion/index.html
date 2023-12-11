@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'mi_aplicacion/img/LOGO1.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'mi_aplicacion/css/style.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Lorem Ipsum Store</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="{% static 'mi_aplicacion/img/LOGO1.jpg' %}" alt="">
+        <nav>
+            <a href="{% url 'home' %}" class="active">Inicio</a>
+            <a href="{% url 'servtect' %}">Servicio Técnico</a>
+            <a href="{% url 'about' %}">Sobre Nosotros</a>
+            <a href="{% url 'products' %}">Tecnología</a>
+            <a href="{% url 'others' %}">Otros</a>
+        </nav>
+    </header>
+
+    <div class="portada">
+        <img src="{% static 'mi_aplicacion/img/BANNER1.jpg' %}" alt="">
+    </div>
+
+    <div class="boton-flotante" data-aos="flip-right">
+        <a href="#"><img src="{% static 'mi_aplicacion/img/whatsapp-logo.png' %}" alt=""></a>
+    </div>
+
+    <main>
+        <h2 class="subtitle">servicios</h2>
+
+        <div class="cards" data-aos="fade-up">
+
+            <div class="card">
+                <div class="card__content">
+                    <a href="{% url 'servtect' %}"><img
+                            src="https://i.pinimg.com/550x/44/10/8f/44108f1b4e77f18bd787035e9c74aea0.jpg"></a>
+                    <h3>Servicio Tecnico</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+                    <a href="{% url 'products' %}"><img src="{% static 'mi_aplicacion/img/lenovo1.jpg' %}"></a>
+                    <h3>Tecnologia</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__content">
+                    <a href="{% url 'others' %}"><img
+                            src="https://d22fxaf9t8d39k.cloudfront.net/38776ba5a27d697c1ea0ea514295c8e43e579fb56ac475baf906cfab08b038a330225.jpeg"></a>
+                    <h3>Varios</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="{% url 'about' %}" style="text-decoration: none;">
+            <h2 class="subtitle">Sobre nosotros</h2>
+        </a>
+
+        <div class="acerca" data-aos="zoom-in">
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/92KvGmI49Ow?si=6pf4r6U9WwVOd7hk" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <div class="text">
+                <h3>Quienes somos</h3>
+                <p>Bienvenidos a Lorem Ipsum Shop, Somos una innovadora e-commerce establecida en la Ciudad Autónoma de
+                    Buenos Aires. Ofrecemos productos tecnológicos de gran calidad y a excelentes precios. Aceptamos
+                    todos los métodos de pago. </p>
+                <p>Contamos además con servicio técnico de alta calidad en nuestros laboratorios especialmente
+                    construidos con los mejores técnicos de la ciudad para reparar tus equipos.</p>
+            </div>
+        </div>
+
+
+        <h2 class="subtitle">Productos Mas Vendidos</h2>
+
+        <div class="cards">
+            <div class="card">
+                <a href="#"><img src="{% static 'mi_aplicacion/img/macb1.jpg' %}" alt=""></a>
+                <h3>Macbook</h3>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="{% static 'mi_aplicacion/img/mouse.jpg' %}" alt=""></a>
+                <h3>Mouse</h3>
+            </div>
+
+            <div class="card">
+                <a href="#"><img src="{% static 'mi_aplicacion/img/tecl1.jpg' %}" alt=""></a>
+                <h3>Teclado</h3>
+            </div>
+        </div>
+
+        <h2 class="subtitle">testimonios</h2>
+
+        <div class="testimonios" >
+            <div class="testimonio">
+                <img src="{% static 'mi_aplicacion/img/testimonio1.jpeg' %}" alt="">
+                <h3>Diego</h3>
+                <p>Descubre una variedad de productos tecnológicos de alta calidad que harán tu vida más fácil y
+                    emocionante. Desde dispositivos electrónicos de vanguardia hasta accesorios útiles, tienen todo lo
+                    que necesitas. El servicio técnico es muy rápido y mi equipo quedó funcionando a la perfección. Muy
+                    agradecido!!!</p>
+
+            </div>
+
+            <div class="testimonio">
+                <img src="{% static 'mi_aplicacion/img/testimonio2.jpeg' %}" alt="">
+                <h3>Miram</h3>
+                <p>Como cliente, quedé impresionada por la amplia gama de productos tecnológicos que esta tienda ofrece.
+                    Desde smartphones de última generación hasta accesorios útiles, siempre encuentro lo que necesito
+                    para satisfacer mis necesidades tecnológicas.</p>
+            </div>
+
+            <div class="testimonio">
+                <img src="{% static 'mi_aplicacion/img/testimonio3.jpeg' %}" alt="">
+                <h3>Romina</h3>
+                <p>Como consumidor fiel, siempre elijo esta tienda por su increíble selección de productos tecnológicos.
+                    No solo tienen los gadgets más nuevos, sino que también brindan un servicio de reparación confiable.
+                    Saber que puedo obtener todo lo que necesito y contar con soporte técnico cuando lo requiero, hace
+                    que esta tienda sea mi opción preferida.</p>
+
+            </div>
+        </div>
+
+        <h2 class="subtitle">Ubicacion</h2>
+
+        <div class="ubicacion">
+            <div class="text">
+                <h3>¿Dónde estamos?</h3>
+                <p>Estamos ubicados en el microcentro de la Ciudad Autónoma de Buenos Aires, de todos métodos
+                    contamos con servicio de motomensajeria propia para retirar y entregar tus compras o equipos
+                    que necesites arreglar por nosotros.
+                </p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.27471114807!2d-58.51587083151427!3d-34.61579593309882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1698095149011!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="contacto">
+            <p>📞 +54 9 11 1234 4567</p>
+            <p>✉️ hola@loremipsum.com</p>
+            <p>🔋 Bs.As, Argentina</p>
+        </div>
+
+        <div class="redes-sociales">
+            <h2>NUESTRAS REDES SOCIALES</h2>
+            <a href="#"><img src="{% static 'mi_aplicacion/img/facebook.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'mi_aplicacion/img/twitter.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'mi_aplicacion/img/whatsapp.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'mi_aplicacion/img/linkedin.png' %}" alt=""></a>
+        </div>
+
+        <div class="correo">
+            <h2>CONTACTO</h2>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Your Email">
+                <button>Enviar</button>
+            </form>
+        </div>
+        <p>&copy; Lorem Ipsum Shop</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'mi_aplicacion/img/LOGO1.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'mi_aplicacion/css/servTec.css' %}">
+    <title>Lorem Ipsum</title>
+</head>
+<body>
+    <header>
+        <img src="{% static 'mi_aplicacion/img/LOGO1.jpg' %}" alt="">
+        <nav>
+            <a href="{% url 'home' %}">Inicio</a>
+            <a href="{% url 'servtect' %}"  class="active">Servicio Técnico</a>
+            <a href="{% url 'about' %}">Sobre Nosotros</a>
+            <a href="{% url 'products' %}">Tecnología</a>
+            <a href="{% url 'others' %}">Otros</a>
+        </nav>
+    </header>
+     
+    <section>
+        <section class="info-serv">
+            <div class="info-servicio">
+                <img src="{% static 'mi_aplicacion/img/servicio-imagen.jpg' %}" alt="" class="imagen-serv">
+                <div class="texto-serv"> 
+                    <h1>Nuestros mejores técnicos</h1>
+                    <p>Nuestro equipo de expertos en tecnología está listo para ayudarte en caso de cualquier problema con tus dispositivos. Realizamos reparaciones profesionales y eficientes en una amplia gama de productos, desde teléfonos inteligentes y tablets hasta computadoras y dispositivos de red. Ya sea una pantalla rota, problemas de software o cualquier otro inconveniente, estamos aquí para solucionarlo rápidamente. La satisfacción del cliente es nuestra prioridad número uno. Ofrecemos un servicio al cliente de primera clase, brindándote una experiencia sin complicaciones y un soporte constante. Siempre estamos disponibles para responder a tus preguntas, resolver tus preocupaciones y garantizar que estés satisfecho con nuestros productos y servicios.</p>
+                </div>
+                <div class="texto-serv"> 
+                    <h1>Pasamos a retirar tu equipo</h1>
+                    <p>Contamos con servicio propio de motomensajería para ir a buscar tu equipo y devolvértelo ya reparado.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="content">
+        <h1 class="logo">Contactanos</h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Llena el formulario</h3>
+                <form id="miFormulario" action="" onsubmit="return validarFormulario()">
+                    <p>
+                        <label for="">Nombre completo</label>
+                        <input type="text" id="fullname" name="fullname">
+                    </p>
+                    <p>
+                        <label for="">Email</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+                    <p>
+                        <label for="">Telefono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </p>
+                    <p>
+                        <label for="">Asunto</label>
+                        <input type="text" id="affair" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>Message</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>More Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Calle imaginaria</li>
+                    <li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+                    <li><i class="fas fa-envelope-open-text"></i> contact@website.com</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
+                <p>Company.com</p>
+            </div>
+        </div>
+
+        <div id="confirmacion-envio" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <p>¡El formulario se envió correctamente!</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>
+        <div class="contacto">
+            <p>📞 +54 9 11 1234 4567</p>
+            <p>✉️ hola@loremipsum.com</p>
+            <p>🔋 Bs.As, Argentina</p>
+        </div>
+      
+        <div class="redes-sociales">
+            <h2>NUESTRAS REDES SOCIALES</h2>
+            <a href="#"><img src="{% static 'mi_aplicacion/img/facebook.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'mi_aplicacion/img/twitter.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'mi_aplicacion/img/whatsapp.png' %}" alt=""></a>
+            <a href="#"><img src="{% static 'mi_aplicacion/img/linkedin.png' %}" alt=""></a>
+        </div>
+
+        <div class="correo">
+            <h2>CONTACTO</h2>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Your Email">
+                <button>Enviar</button>
+            </form>
+        </div>
+        <p>&copy; Lorem Ipsum Shop</p>
+    </footer>
+
+    <script src="{% static 'mi_aplicacion/js/form

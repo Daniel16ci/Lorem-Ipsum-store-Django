@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+header {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background: hsla(213, 77%, 14%, 1);
+    background: linear-gradient(90deg, rgb(2, 19, 41) 0%, rgb(7, 47, 70) 100%);
+    background: linear-gradient(90deg, rgb(3, 14, 29) 0%, rgb(8, 57, 83) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(4, 20, 41) 0%, rgb(9, 54, 80) 100%);
+}
+
+
+header img {
+    height: 45px;
+    margin: 5px;
+}
+
+header nav {
+    margin: 5px;
+}
+
+header nav a {
+    margin: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(158, 30, 255);
+}
+
+header nav a:hover {
+    color: rgb(112, 112, 112);
+}
+
+
+.active{
+    color: white;
+}
+
+.portada{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.portada img{
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portada h1{
+    position: absolute;
+    z-index: 100;
+    margin-top: 90px;
+    background: none;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.subtitle{
+    color: white;
+    text-align: center;
+    margin: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.boton-flotante{
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 120;
+}
+
+.boton-flotante img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info{
+    width: 100%;
+    background-color: #000000;
+    background-attachment: fixed;
+    color: rgba(0, 0, 0, 0);
+    display: grid ;
+    justify-content: center;
+}
+
+.info-container{
+    color: #6517f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 830px;
+}
+
+.ubicacion{
+    width: 100%;
+    background-color: #000000;
+    background-attachment: fixed;
+    color: rgba(0, 0, 0, 0);
+    display: grid ;
+    justify-content: center;
+}
+
+.ubicacion .text, .text{
+    color: #6517f5;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+  width: 390px;
+  margin: 0 20px;
+  height: auto;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
+.card__content {
+  background: rgb(5, 6, 45);
+  border-radius: 17px;
+  width: 100%;
+  height: 100%;
+}
+
+.card img{
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    min-width: 300px;
+    object-fit: cover;
+}
+
+.card:hover{
+    filter: blur(2px);
+}
+
+.card h3{
+    text-align: center;
+    color: white;
+}
+
+
+.acerca{
+    display: flex;
+    background-color: white;
+    z-index: 200;
+    height: 500px;
+}
+
+.acerca iframe{
+    height: 500px;
+    width: 900px;
+}
+
+.testimonios{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonio{
+    background-color: rgba(36, 2, 58, 0.405);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin-right: 30px;
+}
+
+.testimonio img{
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.testimonio h3{
+    text-align: center;
+    color: white;
+}
+
+
+.testimonio p{
+    color: white;
+    margin: 10px;
+}
+
+.ubicacion{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    z-index: 150;
+}
+
+
+.ubicacion .text{
+    margin: 50px;
+    max-width: 550px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.ubicacion .text p{
+    margin-top: 50px;
+}
+
+.text{
+    margin: 50px;
+    max-width: 550px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.text p{
+    margin-top: 50px;
+}
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://quondos.com/mag/wp-content/uploads/2020/05/herramientasparavender.jpg);
+    width: 100%;
+    display: flex;
+    padding: 60px;
+}   
+      
+
+
+footer .contacto{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 40px;
+}
+
+
+footer .contacto img{
+  height: 190px;
+  width: 190px;
+  margin-bottom: 20px;
+}
+
+footer .contacto p{
+  margin-top: 20px;
+}
+  
+footer .enlaces{
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+
+footer .enlaces h2{
+  color: white;
+  letter-spacing: 5px;
+}
+
+footer .enlaces a{
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+
+
+footer .redes-sociales{
+  display: flex;
+  margin:0 50px;
+}
+
+footer .redes-sociales h2{
+  color: white;
+  letter-spacing: 5px;
+}
+
+footer .redes-sociales img{
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+  margin:0 10px;
+}
+
+
+footer .correo h2{
+  color: white;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+footer .correo input{
+  margin-top: 5px;
+  width: 250px;
+  height: 35px;
+  background-color: #1b1b1b;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px;
+}
+
+footer .correo button{
+  width: 250px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgb(254, 173, 173);
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 890px) {
+
+    header nav a{
+        font-size: 10px;
+    }
+
+    .boton-flotante img{
+        height: 100px;
+        width: 100px;
+    }
+
+    .acerca{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+
+    .acerca iframe{
+        width: 100vw;
+    }
+
+    .acerca .text p{
+        font-size: 10px;
+        max-width: 220px;
+    }
+
+    .ubicacion{
+        flex-direction: column;
+    }
+
+    .ubicacion iframe{
+        width: 100vw;
+    }
+
+    .ubicacion .text p{
+        font-size: 10px;
+        max-width: 220px;
+    }
+
+    .testimonios{
+        flex-wrap: wrap;
+    }
+
+    .testimonio{
+        margin-bottom: 20px;
+    }
+
+    .cards{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+
+    .portada h1{
+        font-size: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    footer .redes-sociales{
+        display: none;
+    }
+  }
+

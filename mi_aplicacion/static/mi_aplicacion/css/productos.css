@@ -1,0 +1,141 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-image: url('https://img.freepik.com/fotos-premium/efecto-textura-nieve-blanca-natural-aislado-sobre-fondo-noche-negra_231311-5480.jpg'); */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+header {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  background: hsla(213, 77%, 14%, 1);
+  background: linear-gradient(90deg, rgb(2, 19, 41) 0%, rgb(7, 47, 70) 100%);
+  background: linear-gradient(90deg, rgb(3, 14, 29) 0%, rgb(8, 57, 83) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(4, 20, 41) 0%, rgb(9, 54, 80) 100%);
+}
+
+
+header img{
+  height: 45px;
+  margin: 5px;
+}
+
+header nav{
+  margin: 5px;
+}
+
+header nav a{
+  margin: 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: rgb(158, 30, 255);
+}
+
+header nav a:hover{
+  color: rgb(112, 112, 112);
+}
+
+.active{
+  color: white;
+}
+
+
+main{
+  display: flex;
+  justify-content: space-around;
+}
+
+main aside{
+  margin-top: 90px;
+}
+
+main aside img{
+  height: 1200px;
+  width: 200px;
+}
+
+main .info-principal{
+  margin-top: 90px;
+  margin-left: 20px;
+}
+
+main .info-principal .productos{
+  display: flex;
+  flex-direction: column;
+}
+
+
+main .info-principal .productos .producto{
+  display: flex;
+  margin: 20px;
+}
+
+main .info-principal .productos .producto img{
+  height: 350px;
+  width: 350px;
+  object-fit: contain;
+}
+
+main .info-principal .productos .producto  .text{
+  margin-left: 20px;
+}
+
+main .info-principal .productos .producto  .text h2{
+  text-transform: uppercase;
+  max-width: 590px;
+}
+
+main .info-principal .productos .producto  .text .rate{
+  display: inline-block;
+  padding: 5px;
+  border-radius: 5px;
+  color: orange;
+  text-transform: uppercase;
+  background-color: #111010;
+  margin: 10px 0;
+}
+
+main .info-principal .productos .producto  .text .precio{
+  font-size: 30px;
+  color: rgb(78, 78, 78);
+}
+
+main .info-principal .productos .producto  .text .precio span{
+  color: green;
+}
+
+main .info-principal .productos .producto  .text .precio del{
+  font-size: 25px;
+}
+
+main .info-principal .productos .producto  .text .envio{
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 800px) {
+  main aside{
+      display: none;
+  }
+
+  main .info-principal{
+      margin-top: 100px;
+  }
+}
+
+@media (max-width: 600px){
+  main .info-principal {
+      margin-left: 400px;
+  }
+}

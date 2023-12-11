@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mi_aplicacion/css/productos.css' %}">
+    <title>Lorem Ipsum Store</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="{% static 'mi_aplicacion/img/LOGO1.jpg' %}" alt="">
+        <nav>
+            <a href="{% url 'home' %}">Inicio</a>
+            <a href="{% url 'servtect' %}">Servicio Técnico</a>
+            <a href="{% url 'about' %}">Sobre Nosotros</a>
+            <a href="{% url 'products' %}" class="active">Tecnología</a>  <!-- Cambia 'productos' por la URL correcta -->
+            <a href="{% url 'others' %}" >Otros</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <aside>
+            <img src="{% static 'mi_aplicacion/img/aside.png' %}" alt="">
+        </aside>
+
+        <section class="info-principal">
+            <h1>Tecnología</h1>
+            <div class="productos">
+                {% for producto in productos %}
+                    <div class="producto">
+                        <img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}">
+                        <div class="text">
+                            <h2>{{ producto.nombre }}</h2>
+                            <p>{{ producto.descripcion }}</p>
+                            <p class="precio">{{ producto.precio }}<span>$</span></p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'mi_aplicacion/img/LOGO1.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'mi_aplicacion/css/style.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Lorem Ipsum Store</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="{% static 'mi_aplicacion/img/LOGO1.jpg' %}" alt="">
+        <nav>
+            <a href="{% url 'home' %}" class="active">Inicio</a>
+            <a href="{% url 'servtect' %}">Servicio Técnico</a>
+            <a href="{% url 'about' %}">Sobre Nosotros</a>
+            <a href="{% url 'products' %}">Tecnología</a>
+            <a href="{% url 'others' %}">Otros</a>
+        </nav>
+    </header>
+
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

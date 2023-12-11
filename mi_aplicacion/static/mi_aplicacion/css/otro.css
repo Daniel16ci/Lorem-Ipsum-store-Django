@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  background: hsla(213, 77%, 14%, 1);
+  background: linear-gradient(90deg, rgb(2, 19, 41) 0%, rgb(7, 47, 70) 100%);
+  background: linear-gradient(90deg, rgb(3, 14, 29) 0%, rgb(8, 57, 83) 100%);
+  background: -webkit-linear-gradient(90deg, rgb(4, 20, 41) 0%, rgb(9, 54, 80) 100%);
+}
+
+
+header img {
+  height: 45px;
+  margin: 5px;
+}
+
+header nav {
+  margin: 5px;
+}
+
+header nav a {
+  margin: 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: rgb(158, 30, 255);
+}
+
+header nav a:hover {
+  color: rgb(112, 112, 112);
+}
+
+      
+
+.active{
+  color: white;
+}
+
+
+
+footer .contacto{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 40px;
+}
+
+
+footer .contacto img{
+  height: 190px;
+  width: 190px;
+  margin-bottom: 20px;
+}
+
+footer .contacto p{
+  margin-top: 20px;
+}
+  
+footer .enlaces{
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px;
+}
+
+footer .enlaces h2{
+  color: white;
+  letter-spacing: 5px;
+}
+
+footer .enlaces a{
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+
+
+footer .redes-sociales{
+  display: flex;
+  margin:0 50px;
+}
+
+footer .redes-sociales h2{
+  color: white;
+  letter-spacing: 5px;
+}
+
+footer .redes-sociales img{
+  height: 30px;
+  width: 30px;
+  filter: invert(100%);
+  margin:0 10px;
+}
+
+
+footer .correo h2{
+  color: white;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+footer .correo input{
+  margin-top: 5px;
+  width: 250px;
+  height: 35px;
+  background-color: #1b1b1b;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px;
+}
+
+footer .correo button{
+  width: 250px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgb(254, 173, 173);
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}

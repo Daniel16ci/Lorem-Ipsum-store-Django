@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url('https://img.freepik.com/fotos-premium/efecto-textura-nieve-blanca-natural-aislado-sobre-fondo-noche-negra_231311-5480.jpg'); */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+header {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background: hsla(213, 77%, 14%, 1);
+    background: linear-gradient(90deg, rgb(2, 19, 41) 0%, rgb(7, 47, 70) 100%);
+    background: linear-gradient(90deg, rgb(3, 14, 29) 0%, rgb(8, 57, 83) 100%);
+    background: -webkit-linear-gradient(90deg, rgb(4, 20, 41) 0%, rgb(9, 54, 80) 100%);
+}
+
+
+header img {
+    height: 45px;
+    margin: 5px;
+}
+
+header nav {
+    margin: 5px;
+}
+
+header nav a {
+    margin: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(158, 30, 255);
+}
+
+header nav a:hover {
+    color: rgb(112, 112, 112);
+}
+
+.active{
+    color: white;
+}
+
+
+.texto {
+    position: relative;
+    width: 100%;
+    height: 684px;
+    display: flex;
+    color: white;
+}
+
+.texto {
+    width: 100%;
+    background-image: url(https://www.bbva.com/wp-content/uploads/2018/06/fintech-tecnologia-innovacion-digital-blockchain-bbva_opt.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 684px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.gif-banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gif-banner img {
+    width: 100vw;
+}
+
+
+.info-serv {
+    text-align: center;
+    border: 2px solid #3a3939;
+    padding: 20px;
+    border-radius: 10px;
+    background: hsla(213, 77%, 14%, 1);
+    background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, rgb(47, 74, 90) 100%);
+    background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, rgb(48, 79, 97) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, rgb(48, 82, 102) 100%);
+}
+
+.imagen-serv {
+    width: 48%;
+    display: inline-block;
+}
+
+.texto-serv {
+    display: inline-block;
+}
+
+.texto-serv h1 {
+    margin-bottom: 15px;
+}
+
+/* h1 {
+  margin-left: 13px;
+  color: #4d0686;
+} */
+
+.texto-serv h1 {
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    /* display: inline-block; */
+    /* text-align: center; 
+  width: 30px;
+  height: 30px;
+  padding: 2px; 
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  margin-right: 0 auto 5px;  */
+}
+
+.texto-serv p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background: #181818;
+    color: #fff;
+}
+
+.logo {
+    text-align: center;
+    font-size: 3em;
+}
+
+.contact-form {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-form>* {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-info {
+    background: #000;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #d63031;
+    outline: 0;
+    color: #fff;
+}
+
+.contact-form form button {
+    background: #b70e21;
+    color: #000;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-in-out;
+    outline: 0;
+}
+
+.contact-info,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    padding: .3em;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    padding: 60px;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://quondos.com/mag/wp-content/uploads/2020/05/herramientasparavender.jpg);
+}
+
+
+
+footer .contacto {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 40px;
+}
+
+
+footer .contacto img {
+    height: 190px;
+    width: 190px;
+    margin-bottom: 20px;
+}
+
+footer .contacto p {
+    margin-top: 20px;
+}
+
+footer .enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+}
+
+footer .enlaces h2 {
+    color: white;
+    letter-spacing: 5px;
+}
+
+footer .enlaces a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+}
+
+
+footer .redes-sociales {
+    display: flex;
+    margin: 0 50px;
+}
+
+footer .redes-sociales h2 {
+    color: white;
+    letter-spacing: 5px;
+}
+
+footer .redes-sociales img {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
+    margin: 0 10px;
+}
+
+
+footer .correo h2 {
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+footer .correo input {
+    margin-top: 5px;
+    width: 250px;
+    height: 35px;
+    background-color: #1b1b1b;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px;
+}
+
+footer .correo button {
+    width: 250px;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: rgb(254, 173, 173);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.texto-serv p {
+    color: aliceblue;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px;
+    }
+
+    .nav .logo img {
+        width: 60px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .nav .Header img {
+        width: 30px;
+    }
+
+    .texto {
+        height: auto;
+    }
+
+    .gif-banner img {
+        width: 100vw;
+        ;
+        height: auto;
+    }
+
+    .info-serv .texto-serv {
+        text-align: center;
+    }
+
+    .content {
+        padding: 1em;
+    }
+
+
+    .logo {
+        font-size: 2em;
+    }
+
+    .contact-form {
+        box-shadow: none;
+    }
+
+    .contact-form form {
+        display: block;
+    }
+
+    .contact-form form label,
+    .contact-form form input,
+    .contact-form form textarea {
+        width: 100%;
+    }
+
+    .contact-form form p {
+        padding: 1em;
+    }
+
+    footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    footer .redes-sociales{
+        display: none;
+    }
+
+}
